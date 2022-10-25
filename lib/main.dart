@@ -1,6 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
 import 'package:monapp/widgets/academy_page.dart';
+import 'package:monapp/widgets/exo4/getx_exo4_bindings.dart';
 import 'package:monapp/widgets/exo4/getx_exo4_view.dart';
 import 'package:monapp/widgets/form_exo3.dart';
 import 'package:get/get.dart';
@@ -21,9 +21,10 @@ class MyApp extends StatelessWidget {
       ),
       getPages: [
         GetPage(
-          name: 'exo4',
-          page: () => GetxExo4(),
-        )
+          name: '/exo4',
+          page: () => const GetxExo4(),
+          binding: GetxExo4Bindings(),
+        ),
       ],
       initialRoute: 'exo4',
       home: const FormExo3(),
