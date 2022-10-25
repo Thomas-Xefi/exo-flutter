@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monapp/widgets/academy_page.dart';
+import 'package:monapp/widgets/form_exo3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const AcademyPage(),
+      home: const FormExo3(),
     );
   }
 }
